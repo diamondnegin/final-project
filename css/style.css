@@ -166,9 +166,13 @@ img:hover {
   flex-direction: column;
   justify-content: flex-end;
   padding: 10px;
-  color: #ffffff;
+  color: #1b1b3a;
   text-align: center;
   transition: transform 0.3s ease;
+}
+
+.swatch:nth-child(-n+3) {
+  color: #ffffff;
 }
 
 .swatch:hover {
@@ -180,15 +184,8 @@ img:hover {
   font-weight: bold;
 }
 
-/* Fix contrast: the three lighter swatches (Muted Violet, Bright Amethyst,
-   Soft Lavender) need dark text instead of white to pass WAVE contrast checks */
-.swatch:nth-child(n+4) {
-  color: #1b1b3a;
-}
-
 .swatch span {
   font-size: 85%;
-  opacity: 0.85;
 }
 
 /* ===== 9. nth-child on the swatches too, for variety ===== */
