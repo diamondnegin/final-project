@@ -166,21 +166,27 @@ img:hover {
   flex-direction: column;
   justify-content: flex-end;
   padding: 10px;
-  color: #1b1b3a;
   text-align: center;
   transition: transform 0.3s ease;
-}
-
-.swatch:nth-child(-n+3) {
-  color: #ffffff;
 }
 
 .swatch:hover {
   transform: translateY(-6px);
 }
 
+/* A solid dark backdrop behind the text guarantees strong contrast
+   no matter what color the swatch background itself is. */
+.swatch p,
+.swatch span {
+  background-color: rgba(27, 27, 58, 0.85);
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 3px 6px;
+  display: inline-block;
+}
+
 .swatch p {
-  margin: 0;
+  margin: 0 0 4px 0;
   font-weight: bold;
 }
 
